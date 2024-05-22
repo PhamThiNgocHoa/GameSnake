@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Snake Game </title>
+    <link rel="stylesheet" href="style.css">
+<!--21130359_PhamThiNgocHoa-->
+    <title>Snake</title>
+</head>
+<body>
+
+<div id="popup">
+    <div id="item" class="show">
+        <div class="header">
+            <h3>Giới thiệu: </h3>
+            <i class="fa-solid fa-x" style="font-size: 10px; "></i>
+        </div>
+
+        <div class="instruct">
+            <p>  Xin chào mọi người,<br>
+                Tôi là Phạm Thị Ngọc Hòa - 21130359, một sinh viên năm thứ ba chuyên ngành Công nghệ Phần mềm tại Trường Đại học Nông Lâm TP. Hồ Chí Minh. <br>
+                Tôi luôn đam mê với lập trình và sáng tạo. Trong quá trình học tập và nghiên cứu, tôi đã có cơ hội tham gia vào việc phát triển các ứng dụng và trò chơi trên nền tảng phần mềm. Trong số đó, một trong những dự án mà tôi rất tự hào là việc tạo ra một phiên bản mới của trò chơi cổ điển "Snake". <br>
+                Trò chơi Snake không chỉ là một trò chơi giải trí, mà còn là một thử thách cho khả năng tư duy chiến lược và phản xạ của người chơi. Bằng cách tối ưu hóa các thuật toán và kỹ thuật lập trình, tôi đã cố gắng tạo ra một phiên bản mới của trò chơi này với các tính năng và trải nghiệm người chơi tốt nhất.<br>
+                Hi vọng rằng, thông qua trò chơi Snake này, mọi người sẽ có được những giây phút giải trí thú vị và đồng thời cũng có thêm cơ hội để thử thách bản thân và nâng cao kỹ năng. <br>
+                Cảm ơn mọi người đã dành thời gian để đọc về trò chơi này và hy vọng rằng bạn sẽ thích thú khi trải nghiệm nó. <br>
+                Trân trọng, <br>
+                Phạm Thị Ngọc Hòa</p>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+
+    <div class="content">
+
+        <div class="right">
+            <div class="grade">
+                <h3>Điểm:</h3>
+                <span id="score">0</span>
+            </div>
+
+            <div class="centerRight">
+                <button id="intrusct">Giới thiệu</button>
+                <button id="start">Ván mới</button>
+                <button id="paus">Tạm dừng</button>
+                <button id="continue">Tiếp tục</button>
+            </div>
+        </div>
+        <div class="left">
+            <canvas id="board" width="400" height="600"></canvas>
+        </div>
+
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
