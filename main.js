@@ -10,9 +10,10 @@ class Snake {
         ];
         this.collided = false;
     }
-// clone code
+// Phạm thị ngọc hòa
     draw(ctx) {
         ctx.fillStyle='yellow';
+        // phạm thị ngọc hòa
         ctx.strokeStyle ='black';
         ctx.fillRect(this.snake[0].x, this.snake[0].y, this.unitSize,  this.unitSize);
         ctx.strokeRect(this.snake[0].x, this.snake[0].y, this.unitSize,  this.unitSize);
@@ -183,7 +184,7 @@ class Game {
             });
         });
     }
-
+// ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg
     changeDirection(direction) {
         var key = direction;
         var goingUp = this.ySpeed === -this.unitSize;
@@ -207,7 +208,7 @@ class Game {
             this.ySpeed = 0;
         }
     }
-
+// hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     start() {
         this.food.createFood();
         this.barrier.createBoom(); // Thêm lệnh này để tạo ra các nấm
@@ -222,7 +223,7 @@ class Game {
             this.level();
         }
     }
-
+// kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
     level() {
 
         if(this.score <=5){
