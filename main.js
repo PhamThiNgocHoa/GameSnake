@@ -172,9 +172,6 @@ class Game {
     pauseGame() {
         this.paused = true;
     }
-    pause() {
-        this.paused = true;
-    }
 
     resume() {
         this.paused = false;
