@@ -187,14 +187,24 @@ class Game {
 //Nguyễn Phi Long
 //5.5.2	Người chơi nhấn các nút Up, Down, Left, Right.
 
+    start() {
+        this.food.createFood();
+        this.barrier.createBoom(); // Thêm lệnh này để tạo ra các nấm
+        this.drawFood();
+        this.drawSnake();
+        this.nextTick();
+    }
+    //Nguyễn Phi Long
+    //5.5.2	Người chơi nhấn các nút Up, Down, Left, Right.
+    //5.5.3	Hệ thống xác nhận trạng thái và xác định hướng sẽ đổi.
     changeDirection(direction) {
         var key = direction;
         var goingUp = this.ySpeed === -this.unitSize;
         var goingDown = this.ySpeed === this.unitSize;
         var goingLeft = this.xSpeed === -this.unitSize;
         var goingRight = this.xSpeed === this.unitSize;
-    //5.5.3	Hệ thống xác nhận trạng thái và xác định hướng sẽ đổi.
-    //5.5.4 Nếu con rắn đang di chuyển theo hướng trước đó thì sẽ chuyển sang hướng tương ứng đã chọn,
+
+    //5.5.4 Nếu con rắn đang di chuyển theo hướng trước đó thì sẽ chuyển sang hướng tương ứng đã chọn
         // nếu trùng hướng sẽ không có gì xảy ra
         if (key === "ArrowUp" && !goingDown) {
             this.xSpeed = 0;
@@ -213,7 +223,6 @@ class Game {
             this.ySpeed = 0;
         }
     }
-// hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
     start() {
         this.food.createFood();
         this.barrier.createBoom(); // Thêm lệnh này để tạo ra các nấm
@@ -228,7 +237,6 @@ class Game {
             this.level();
         }
     }
-// kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
     level() {
 
         if(this.score <=5){
