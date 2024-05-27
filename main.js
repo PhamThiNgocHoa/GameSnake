@@ -167,8 +167,9 @@ class Game {
         this.paused = false;
         this.start();
     }
-
-    pause() {
+//hiiii
+    //nguyenthanhhuyyyyy
+    pauseGame() {
         this.paused = true;
     }
 
@@ -404,7 +405,7 @@ const game = new Game();
 
 // jqery
 document.getElementById("paus").addEventListener("click", () => {
-    game.pause();
+    game.pauseGame();
 });
 document.getElementById("continue").addEventListener("click", () => {
     game.resume();
