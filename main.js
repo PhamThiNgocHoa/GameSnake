@@ -183,7 +183,7 @@ class Game {
             });
         });
     }
-   //5.5.1	Game Start (Con rắn sẽ di chuyển theo 1 hướng ngẫu nhiên).
+
     start() {
         this.food.createFood();
         this.barrier.createBoom(); // Thêm lệnh này để tạo ra các nấm
@@ -191,7 +191,7 @@ class Game {
         this.drawSnake();
         this.nextTick();
     }
-
+    //Nguyễn Phi Long
     //5.5.2	Người chơi nhấn các nút Up, Down, Left, Right.
     //5.5.3	Hệ thống xác nhận trạng thái và xác định hướng sẽ đổi.
     changeDirection(direction) {
