@@ -167,12 +167,8 @@ class Game {
         this.paused = false;
         this.start();
     }
-
-    // Nguyen Thanh Huy
-    // chuc nang pause game
-    pauseGame(){
-        this.paused = true;
-    }
+//nguyen thanh huy
+//hiiii
     pause() {
         this.paused = true;
     }
@@ -409,7 +405,7 @@ const game = new Game();
 
 // jqery
 document.getElementById("paus").addEventListener("click", () => {
-    game.pauseGame();
+    game.pause();
 });
 document.getElementById("continue").addEventListener("click", () => {
     game.resume();
