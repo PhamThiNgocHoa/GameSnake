@@ -10,9 +10,10 @@ class Snake {
         ];
         this.collided = false;
     }
-
+// Phạm thị ngọc hòa
     draw(ctx) {
         ctx.fillStyle='yellow';
+        // phạm thị ngọc hòa
         ctx.strokeStyle ='black';
         ctx.fillRect(this.snake[0].x, this.snake[0].y, this.unitSize,  this.unitSize);
         ctx.strokeRect(this.snake[0].x, this.snake[0].y, this.unitSize,  this.unitSize);
@@ -183,6 +184,8 @@ class Game {
             });
         });
     }
+//Nguyễn Phi Long
+//5.5.2	Người chơi nhấn các nút Up, Down, Left, Right.
 
     start() {
         this.food.createFood();
@@ -200,7 +203,9 @@ class Game {
         var goingDown = this.ySpeed === this.unitSize;
         var goingLeft = this.xSpeed === -this.unitSize;
         var goingRight = this.xSpeed === this.unitSize;
-    //5.5.4 Nếu con rắn đang di chuyển theo hướng trước đó thì sẽ chuyển sang hướng tương ứng đã chọn.
+
+    //5.5.4 Nếu con rắn đang di chuyển theo hướng trước đó thì sẽ chuyển sang hướng tương ứng đã chọn
+        // nếu trùng hướng sẽ không có gì xảy ra
         if (key === "ArrowUp" && !goingDown) {
             this.xSpeed = 0;
             this.ySpeed = -this.unitSize;
@@ -218,13 +223,20 @@ class Game {
             this.ySpeed = 0;
         }
     }
+    start() {
+        this.food.createFood();
+        this.barrier.createBoom(); // Thêm lệnh này để tạo ra các nấm
+        this.drawFood();
+        this.drawSnake();
+        this.nextTick();
+
+    }
 
     nextTick() {
         if (!this.paused && this.running) {
             this.level();
         }
     }
-
     level() {
 
         if(this.score <=5){
