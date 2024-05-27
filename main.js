@@ -10,7 +10,7 @@ class Snake {
         ];
         this.collided = false;
     }
-
+// clone code
     draw(ctx) {
         ctx.fillStyle='yellow';
         ctx.strokeStyle ='black';
